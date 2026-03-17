@@ -1,0 +1,45 @@
+name: Bug Report
+description: Report an issue with a skill, template, or framework
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue.
+
+  - type: input
+    id: skill
+    attributes:
+      label: Affected Skill or Template
+      description: Which skill or template has the issue?
+      placeholder: e.g., lenny-strategy, prd-template
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is the problem?
+      placeholder: Describe the issue clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other information that might help (screenshots, links, etc.).

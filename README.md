@@ -1,53 +1,72 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Claude%20Code-Skill-blue?style=for-the-badge" alt="Claude Code Skill">
-  <img src="https://img.shields.io/badge/Skills-88-green?style=for-the-badge" alt="Skills">
-  <img src="https://img.shields.io/badge/PM-Toolkit-orange?style=for-the-badge" alt="PM Toolkit">
+  <img src="https://img.shields.io/github/license/LeoLin990405/claude-lenny-skills?style=flat-square" alt="License">
+  <img src="https://img.shields.io/github/stars/LeoLin990405/claude-lenny-skills?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/issues/LeoLin990405/claude-lenny-skills?style=flat-square" alt="Issues">
+  <img src="https://img.shields.io/badge/Claude%20Code-Skill-8A2BE2?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code Skill">
 </p>
 
-<h1 align="center">PM Toolkit</h1>
+<h1 align="center">Claude Lenny Skills</h1>
 
 <p align="center">
   <strong>Complete Product Management Toolkit for Claude Code</strong>
   <br>
-  <em>8 workflow modules, 88 skills, 10 executable templates — covering the full PM lifecycle</em>
+  <em>88 actionable PM skills distilled from Lenny's Podcast, organized into workflow modules with executable templates</em>
 </p>
 
 <p align="center">
-  <a href="#-modules">Modules</a> •
-  <a href="#-templates">Templates</a> •
-  <a href="#-playbooks">Playbooks</a> •
-  <a href="#-quick-start">Quick Start</a>
+  <a href="#features">Features</a> &middot;
+  <a href="#quick-start">Quick Start</a> &middot;
+  <a href="#modules">Modules</a> &middot;
+  <a href="#templates">Templates</a> &middot;
+  <a href="#playbooks">Playbooks</a> &middot;
+  <a href="#contributing">Contributing</a>
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Claude%20Code-CLI-8A2BE2?logo=anthropic&logoColor=white" alt="Claude Code">
-  <img src="https://img.shields.io/badge/Lenny's-Podcast-FF6B6B?logo=podcast&logoColor=white" alt="Lenny's Podcast">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
-</p>
-
-**English** | [中文](#中文)
 
 ---
 
-## Overview
+## Features
 
-**PM Toolkit** is a complete product management toolkit organized by workflow phase. It evolved from 86 Lenny's Podcast skills into 8 actionable workflow modules with executable templates, frameworks, and checklists.
+| Feature | Description |
+|---------|-------------|
+| **88 PM Skills** | Actionable frameworks covering the full product management lifecycle |
+| **8 Workflow Modules** | Organized by phase: discovery, strategy, execution, growth, analytics, communication, team, leadership |
+| **10 Executable Templates** | Ready-to-use PRDs, OKRs, interview scripts, launch checklists, and more |
+| **9 Role-Based Playbooks** | Guided workflow sequences for founders, PMs, managers, growth leaders, and executives |
+| **Auto-Routing** | Claude Code automatically selects the right module based on your request |
+| **Lenny's Podcast Wisdom** | Distilled from 86+ episodes with top product leaders |
 
-### What Changed (v2.0)
+---
 
-| Before (v1) | After (v2) |
-|-------------|------------|
-| 16 knowledge categories | **8 workflow modules** |
-| Advice-level bullet points | **Actionable frameworks with anti-patterns** |
-| No templates | **10 executable templates** |
-| Domain-organized | **Lifecycle-organized** |
+## Quick Start
+
+### Installation
+
+```bash
+cd ~/.claude/skills
+git clone https://github.com/LeoLin990405/claude-lenny-skills.git
+```
+
+### Usage
+
+```bash
+# The toolkit auto-routes based on your request:
+"Help me write a PRD"              # -> pm-strategy + prd-template
+"Prepare user interviews"          # -> pm-discovery + interview-script
+"Set OKRs for Q2"                  # -> pm-strategy + okr-template
+"Run a retro"                      # -> pm-execution + retro-template
+"Build a financial model"          # -> pm-analytics + financial-model-spec
+
+# Or access modules directly:
+"Use the PM growth module"         # -> pm-growth
+"Show me the founder playbook"     # -> pm-playbooks
+```
 
 ---
 
 ## Modules
 
 | # | Module | Skills | What It Covers |
-|---|--------|--------|---------------|
+|---|--------|--------|----------------|
 | 1 | [pm-discovery](skills/pm-discovery/SKILL.md) | 7 | Problem definition, user research, competitive analysis, JTBD |
 | 2 | [pm-strategy](skills/pm-strategy/SKILL.md) | 8 | Vision, north star, OKRs, roadmap, PRD, prioritization |
 | 3 | [pm-execution](skills/pm-execution/SKILL.md) | 10 | Shipping, timelines, decisions, meetings, retros |
@@ -80,88 +99,78 @@ Ready-to-use templates for common PM tasks:
 
 ## Playbooks
 
-Role-based workflow sequences — see [pm-playbooks](skills/pm-playbooks/SKILL.md):
+Role-based workflow sequences -- see [pm-playbooks](skills/pm-playbooks/SKILL.md):
 
 | Playbook | Workflow Sequence |
-|----------|------------------|
-| **Startup Founder** | discovery → strategy → execution → growth → team → leadership |
-| **Product Manager** | discovery → strategy → execution → communication → leadership |
-| **First-Time Manager** | team → communication → execution → leadership |
-| **Growth Leader** | growth → discovery → analytics → communication → leadership |
-| **Engineering Manager** | execution → analytics → team → communication |
-| **Sales Leader** | team → communication → strategy → growth |
-| **AI Builder** | leadership → strategy → discovery → growth → execution |
-| **Executive** | communication → leadership → strategy → execution |
-| **Career Growth** | leadership → communication → team |
+|----------|-------------------|
+| **Startup Founder** | discovery -> strategy -> execution -> growth -> team -> leadership |
+| **Product Manager** | discovery -> strategy -> execution -> communication -> leadership |
+| **First-Time Manager** | team -> communication -> execution -> leadership |
+| **Growth Leader** | growth -> discovery -> analytics -> communication -> leadership |
+| **Engineering Manager** | execution -> analytics -> team -> communication |
+| **Sales Leader** | team -> communication -> strategy -> growth |
+| **AI Builder** | leadership -> strategy -> discovery -> growth -> execution |
+| **Executive** | communication -> leadership -> strategy -> execution |
+| **Career Growth** | leadership -> communication -> team |
 
 ---
 
-## Quick Start
+## Project Structure
 
-### Installation
-
-```bash
-cd ~/.claude/skills
-git clone https://github.com/LeoLin990405/claude-lenny-skills.git
 ```
-
-### Usage
-
-```bash
-# The toolkit auto-routes based on your request:
-"Help me write a PRD"              → pm-strategy + prd-template
-"Prepare user interviews"          → pm-discovery + interview-script
-"Set OKRs for Q2"                  → pm-strategy + okr-template
-"Run a retro"                      → pm-execution + retro-template
-"Build a financial model"          → pm-analytics + financial-model-spec
-
-# Or access modules directly:
-"Use the PM growth module"         → pm-growth
-"Show me the founder playbook"     → pm-playbooks
-```
-
----
-
-## 中文
-
-### 概述
-
-**PM Toolkit** 是一个完整的产品管理工具集，按工作流阶段组织。从 86 个 Lenny's Podcast 技能进化为 8 个可执行的工作流模块，包含模板、框架和检查清单。
-
-### 模块
-
-| 模块 | 技能数 | 覆盖范围 |
-|------|--------|---------|
-| pm-discovery | 7 | 问题定义、用户研究、竞品分析 |
-| pm-strategy | 8 | 愿景、北极星指标、OKR、路线图、PRD |
-| pm-execution | 10 | 发布、时间线、决策、会议、复盘 |
-| pm-growth | 8 | PMF、增长飞轮、定价、留存、实验 |
-| pm-analytics | 8 | 指标、财务建模、数据驱动决策 |
-| pm-communication | 9 | 演示、写作、利益相关者、品牌 |
-| pm-team | 22 | 招聘、1:1、文化、委派、销售团队 |
-| pm-leadership | 16 | 教练、产品品味、AI 战略、组织设计 |
-
-### 安装
-
-```bash
-cd ~/.claude/skills
-git clone https://github.com/LeoLin990405/claude-lenny-skills.git
+claude-lenny-skills/
+├── SKILL.md                          # Root skill index for Claude Code
+├── README.md                         # This file
+├── LICENSE                           # MIT License
+├── CONTRIBUTING.md                   # Contribution guidelines
+├── CHANGELOG.md                      # Release history
+├── .github/
+│   ├── workflows/
+│   │   └── claude-review.yml         # Claude Code PR review action
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.yml            # Bug report template
+│   │   ├── feature_request.yml       # Feature request template
+│   │   └── config.yml                # Issue template chooser config
+│   └── PULL_REQUEST_TEMPLATE.md      # PR template
+└── skills/
+    ├── lenny-advanced/SKILL.md       # Product taste, systems thinking
+    ├── lenny-career/SKILL.md         # Ideation, productivity
+    ├── lenny-communication/SKILL.md  # Presentations, writing
+    ├── lenny-decision/SKILL.md       # Decision processes, trade-offs
+    ├── lenny-design/SKILL.md         # Design systems, reviews
+    ├── lenny-execution/SKILL.md      # Delivery, timelines
+    ├── lenny-growth/SKILL.md         # PMF, growth loops, pricing
+    ├── lenny-hiring/SKILL.md         # JDs, interviews, onboarding
+    ├── lenny-marketing/SKILL.md      # Positioning, storytelling
+    ├── lenny-playbooks/SKILL.md      # Role-based combinations
+    ├── lenny-research/SKILL.md       # User research, interviews
+    ├── lenny-sales/SKILL.md          # Founder sales, enterprise
+    ├── lenny-skills/SKILL.md         # Master index of 86 PM skills
+    ├── lenny-startup/SKILL.md        # Team rituals, fundraising
+    ├── lenny-strategy/SKILL.md       # Vision, roadmaps, OKRs
+    └── lenny-technology/SKILL.md     # AI strategy, LLMs, tech debt
 ```
 
 ---
 
-## Contributors
+## Contributing
 
-- **Leo** ([@LeoLin990405](https://github.com/LeoLin990405)) - Project Lead
-- **Claude** (Anthropic Claude) - Content Generation
+Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) for details on how to submit skills, templates, and improvements.
+
+---
 
 ## Acknowledgements
 
-- **[Lenny Rachitsky](https://www.lennyspodcast.com/)** - For the incredible podcast and PM wisdom
+- **[Lenny Rachitsky](https://www.lennyspodcast.com/)** -- For the incredible podcast and PM wisdom that forms the foundation of this toolkit.
+
+## Contributors
+
+- **Leo** ([@LeoLin990405](https://github.com/LeoLin990405)) -- Project Lead
+- **Claude** (Anthropic Claude) -- Content Generation
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License -- see the [LICENSE](LICENSE) file for details.
 
 ---
 
