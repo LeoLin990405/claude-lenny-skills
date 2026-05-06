@@ -1,18 +1,17 @@
-# Lenny Product Management Skills
+# Archived Source Repository
 
-This repository is public and unarchived. It is kept as a maintenance mirror and migration reference for the Lenny product management skills.
+This repository is no longer the canonical home for the Lenny / product-management skills.
 
-The active canonical destination is:
-- https://github.com/LeoLin990405/claude-code-skills
+Canonical location:
 
-The migrated skill packs live under:
-- https://github.com/LeoLin990405/claude-code-skills/tree/main/product-management
+- `LeoLin990405/claude-code-skills`
+- `product-management/lenny-*`
 
-Direct mappings:
-- `claude-lenny-skills/skills/lenny-skills` -> `claude-code-skills/product-management/lenny-skills`
-- `claude-lenny-skills/skills/lenny-playbooks` -> `claude-code-skills/product-management/lenny-playbooks`
-- all other `skills/lenny-*` packs -> matching `product-management/lenny-*` paths
+What changed:
 
-## Maintenance
+- the active PM skill packs have been migrated into `claude-code-skills`
+- this standalone repository is kept only as a historical source and redirect pointer
 
-Use `claude-code-skills` for new features, PM framework updates, and installation flow changes. This repository remains available for historical source context, issue triage, and small compatibility fixes when needed.
+Use or update the skills here:
+
+- <https://github.com/LeoLin990405/claude-code-skills/tree/main/product-management>
